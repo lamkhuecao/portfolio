@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoang Lam Khue Portfolio | Comic-Con Redesign</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="text-sky-950 p-4 font-[Quicksand] scroll-smooth">
+    <!-- NavBar -->
+    <nav
+        class="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between gap-4">
+                <h1 class="higuen text-lg lg:text-3xl text-sky-950">
+                    <a href="index.html" id="home">Hoang Lam Khue Cao</a>
+                </h1>
+                <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" command="--toggle" commandfor="mobile-menu"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-sky-950 hover:bg-white/5 hover:text-cyan-600 focus:outline-2 focus:-outline-offset-1 focus:outline-sky-900">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                            <a href="index.html" aria-current="page"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-sky-950 hover:text-cyan-600">Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3 text-right">
+                <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                <a href="index.html" aria-current="page"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-sky-950 hover:text-cyan-600">Home</a>
+            </div>
+        </el-disclosure>
+    </nav>
+
+    <!-- Project Info -->
+    <section class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <h2 class="higuen text-4xl lg:text-6xl">Project Brief</h2>
+        <h3 class="font-semibold mt-4 mb-2 text-xl lg:text-3xl lg:mt-6">Comic-Con Website Redesign (Solo NAIT project |
+            December 2025)
+        </h3>
+        <p>Objective: Using Figma to redesign an event site for better navigation and improve user experience. <br>
+            What I learnt: From this project, I learnt how to connect user research to design decisions.</p>
+        <h3 class="font-medium mt-4 mb-1 text-xl lg:text-3xl lg:mt-6">Personas</h3>
+        <p class="">Key Insights: Users need quick access to schedules, ticket and maps to make travel plan, get
+            real-time
+            updates and events' information.</p>
+        <h3 class="font-medium mt-4 mb-1 text-xl lg:text-3xl lg:mt-6">Low-fidelity Wireframes</h3>
+        <p class="mb-2">My initial idea was to create a navigation bar with drop-down elements, short content pages so
+            users can
+            scan through information quickly and navigate through the pages faster. Contents were arranged to fit the
+            navigation categories, and make sure users can find what they need. These are my low-fidelity
+            wireframes for mobile and desktop devices.</p>
+        <div class="">
+            <img src="img/comic-con-mobile-wireframes-low.avif"
+                alt="Low-fidelity mobile wireframes for Comic-Con Redesign" class="mb-4 rounded-2xl">
+            <img src="img/comic-con-wireframe-low.avif" alt="Low-fidelity desktop wireframes for Comic-Con Redesign"
+                class="rounded-2xl">
+        </div>
+        <h3 class="font-medium mt-4 mb-1 text-xl lg:text-3xl lg:mt-6">Final Design</h3>
+        <p class="mb-2">Later on, the initial idea was changed to make the navigation items less confusing for the
+            users, and make the final design process less time-consuming. Contents were rearranged into long
+            pages and images were taken from Unsplash to ensure the design works properly. I decided to choose a vibrant
+            color palette but similar to that of Comic-Con original website to keep that familiarity feeling for
+            returning users, headings have different colors for different pages to freshen visual design as well as to
+            improve readability.</p>
+        <div class="">
+            <img src="img/comic-con-final-mobile.avif" alt="Low-fidelity desktop wireframes for Comic-Con Redesign"
+                class="mb-4 rounded-2xl">
+            <img src="img/comic-con-final-desktop.avif" alt="Low-fidelity mobile wireframes for Comic-Con Redesign"
+                class="rounded-2xl">
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</body>
+
+</html>

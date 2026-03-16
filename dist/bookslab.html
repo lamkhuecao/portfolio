@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoang Lam Khue Portfolio | Comic-Con Redesign</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="text-sky-950 p-4 font-[Quicksand] scroll-smooth">
+    <!-- NavBar -->
+    <nav
+        class="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between gap-4">
+                <h1 class="higuen text-lg lg:text-3xl text-sky-950">
+                    <a href="index.html" id="home">Hoang Lam Khue Cao</a>
+                </h1>
+                <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" command="--toggle" commandfor="mobile-menu"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-sky-950 hover:bg-white/5 hover:text-cyan-600 focus:outline-2 focus:-outline-offset-1 focus:outline-sky-900">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                            <a href="index.html" aria-current="page"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-sky-950 hover:text-cyan-600">Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3 text-right">
+                <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                <a href="index.html" aria-current="page"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-sky-950 hover:text-cyan-600">Home</a>
+            </div>
+        </el-disclosure>
+    </nav>
+
+    <!-- Project Info -->
+    <section class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <h2 class="higuen text-4xl lg:text-6xl">Project Brief</h2>
+        <h3 class="font-semibold mt-4 mb-2 text-xl lg:text-3xl lg:mt-6">Bookslab Online Bookstore (Personal project |
+            October 2024)</h3>
+        <p>Using Figma to design an online bookstore that not only sells books, but also office utilities and useful
+            gifts
+            for your
+            family
+            and friends. <br>
+            What I learnt: Through this project, I was able to explore how to use different functions in Figma like
+            creating variables, components, prototyping and discovered my interest in UX/UI and Web design industry.</p>
+        <h3 class="font-medium mt-4 mb-1 text-xl lg:text-3xl lg:mt-6">Final Design</h3>
+        <div class="md:flex flex-wrap my-4">
+            <img src="img/bookslab-mobile-mock-up.avif" alt="Mobile mockup for Bookslab."
+                class="mb-4 flex-1 md:max-w-1/2 rounded-2xl">
+            <img src="img/bookslab-tablet-mock-up.avif" alt="Tablet mockup for Bookslab."
+                class="mb-4 flex-1 md:max-w-1/2">
+            <img src="img/bookslab-desktop-mock-up.avif" alt="Laptop mockup for Bookslab."
+                class="mb-4 flex-1 md:max-w-1/2">
+            <img src="img/bookslab-desktop-mock-up-2.avif" alt="Desktop mockup for Bookslab."
+                class="flex-1 md:max-w-1/2 rounded-2xl">
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</body>
+
+</html>
